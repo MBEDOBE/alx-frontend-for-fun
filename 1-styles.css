@@ -1,0 +1,42 @@
+h2 a {
+  text-decoration: none;
+  position: relative;
+  color: #8a153a;
+}
+
+h2 a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0.2rem;
+  background-color: rgb(156, 13, 13);
+  transition: 1s cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+a:hover::before {
+  left: 0;
+  background-color: #8a153a;
+  width: 100%;
+} 
+/* h2 a {
+  text-decoration: none;
+  position: relative;
+  color: #8a153a;
+}
+
+h2 a::before {
+  content: '';
+  bottom: 0;
+  width: 0;
+  height: 0.1rem;
+  position: absolute;
+  transition: 0.6s cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+a:hover::before {
+  left: 0;
+  background-color: #8a153a;
+  width: 100%;
+}
+*/
