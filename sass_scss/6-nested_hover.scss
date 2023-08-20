@@ -1,11 +1,11 @@
 /* Nested hover
-change button color on hover */
+change button color on hover*/
 
-// Define the styles for buttons and their hover state
+$color-0: #FF0000;
+$color-1: #00FF00;
 button {
-  color: #ff0000; // Text color when not hovering
-
+  color: $color-0;
   &:hover {
-    color: #00ff00; // Text color on hover
+    color: $color-1;
   }
 }
